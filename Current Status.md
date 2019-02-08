@@ -17,7 +17,7 @@ This is the code and documentation of the program Scriptor. Scriptor is an app t
 |Name| Current working on|
 |---|---|
 |Adrian| |
-|Callum| Setting up the Git Hub |
+|Callum| |
 |Joshua| |
 |Wanda| |
 
