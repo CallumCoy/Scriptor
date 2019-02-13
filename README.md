@@ -27,7 +27,7 @@ For sprint one we aim to finish off a base plan.  We also hope to get the basic 
 
 - [Product Backlog](https://github.com/CallumCoy/Scriptor/blob/Cal's-Branch/Documents/Backlog/Product%20Backlog.md)
 - [Current Sprint Backlog](https://github.com/CallumCoy/Scriptor/blob/Cal's-Branch/Documents/Backlog/Sprint%201%20backlog.md)
-  - Burndown Chart (not up yet)
+  - [Burndown Chart (This will redirect you to Google Sheets)](https://docs.google.com/spreadsheets/d/1lUnZI9tesP9iD1U9ASGLT4vclyECX21mVmoN7oNkOxo/edit?usp=sharing)
 - [Design Documents](not up yet)
 - [Source Code](https://github.com/CallumCoy/Scriptor/tree/Cal's-Branch/code)
   - Andriod Code (not up yet)
