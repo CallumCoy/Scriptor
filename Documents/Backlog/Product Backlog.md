@@ -1,9 +1,9 @@
 # product Backlog
 | ID |User Story|Effort|Priority|Validation Criteria|Status|
 |:---:|---|:---:|:---:|---|:---:|
-0|As a priest I want to be able to change the order of the songs for each service.|  |  | A portal will be accesible by all priest that add thier curch | WORKING |
-1|As a priest I want to be able to print the schedule for songs that will be sung this service, in order.|  |  |  | WORKING |
-2|As a church goer I want to be able to see the current song that is been sung at the service.|  |  |  | WORKING |
-3|As a church goer I want to be able to access the options menu.|  |  |  | WORKING |
-4|As A church goer I want to be able to donate to the church through paypal at the push of button.|  |  |  | WORKING |
-5|As A member of the church I want to be able to connect to a external device to get today readings.|  |  |  | WORKING |
+00|As a church goer I want to be able to access the options menu.| 1 | 4 |  | UNSTARTED |
+01|As A church goer I want to be able to donate to the church through paypal at the push of button.| 3 | 5 |  | UNSTARTED |
+02|As a team member I want to hold a meeting to allow all members to be on the same page| 2 | 1 | We met up on campus | COMPLETED|
+03|As a team member I want to be cable to access the entire groups work.| 1 | 2 | A GitHub Project has been created | COMPLETED |
+04|As a priest I want a database of severel sermons to schoose from.| 2 | 3 |  | UNSTARTED|
+05|As a priest I want to be able to acces the database from the net| 4 | 4 |  | UNSTARTED|
