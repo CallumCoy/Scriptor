@@ -116,14 +116,18 @@ h1{
 				<th><ins>Song</ins></th>
 			</tr>
 			<tr>
-				<td>Star bangled banner</td>
-				<td><button onclick="addToSelectedTable()" title="add song", style="text-align:center;", > add</td>
+				<td>Star Spangled Banner</td>
+				<td><button onclick="addToSelectedTable(this.id)" title="add song", style="text-align:center;", id="Star Spangled Banner", > add</td>
+			</tr>
+			<tr>
+				<td>God Save The Qeen</td>
+				<td><button onclick="addToSelectedTable(this.id)" title="add song", style="text-align:center;", id="God Save The Quean", > add</td>
 			</tr>
 		</table>
 	</div>
 	
 	<script>
-		function addToSelectedTable(){
+		function addToSelectedTable(pressedButton){
 			var selectedSongsTable = document.getElementById("selectedTableHTML");
 			var selectedSongsRow = selectedSongsTable.insertRow(-1);
 			var curPlace = selectedSongsRow.insertCell(0);
@@ -131,10 +135,10 @@ h1{
 			var place = selectedSongsRow.insertCell(2);
 			var buttonRemove = selectedSongsRow.insertCell(3);
 			
-			curPlace.innerHTML = selectedSongsTable.rows.length;
-			songName.innerHTML = "songname";
-			place.innerHTML = "<td><input type=\"text\" name = \"Row1\" value = \"1\"</td>";
-			buttonRemove.innerHTML = "<button onclick=\"deleteFromSelected()\",title=\"remove song\", style=\"text-align:center;\"> remove";
+			curPlace.innerHTML = selectedSongsTable.rows.length - 1;
+			songName.innerHTML = pressedButton;
+			place.innerHTML = "<td><input type=\"text\" name = \"Row1\" value =\"" +  (selectedSongsTable.rows.length - 1) + "\"</td>";
+			buttonRemove.innerHTML = "<button onclick=\"deleteRow('selectedTableHTML', this)\",title=\"remove song\", style=\"text-align:center;\"> remove";
 		}
 	</script>
 	<!-- This is a table with the columns place, followed by the name of the song -->
@@ -148,18 +152,39 @@ h1{
 			</tr>
 			<tr>
 				<td>1</td>
-				<td>God save the queen</td>
+				<td>God Save The Quean</td>
 				<td><input type="text" name = "Row1" value = "1"</td>
-				<td><button onclick="deleteFromSelected()"title="Remove Song", style="text-align:center;"> remove</td>
+				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
 			</tr>
 		</table>
-		<button onclick="addToSelectedTable()", title="Save the current order", style="font-size:150%;", style="text-align:center;"> Submit </button>
+		<button onclick="addToSelectedTable()", title="Save The current order", style="font-size:150%;", style="text-align:center;"> Submit </button>
 	</div>
 	
 	<script>
-		function deleteFromSelected(){
-			document.getElementById("selectedTableHTML").deleteRow(-1);
-		}
+	function deleteRow(tableID,currentRow) {
+    try {
+        var table = document.getElementById(tableID);
+        var rowCount = table.rows.length;
+        for (var i = 0; i < rowCount; i++) {
+            var row = table.rows[i];
+            /*var chkbox = row.cells[0].childNodes[0];*/
+            /*if (null != chkbox && true == chkbox.checked)*/
+
+            if (row==currentRow.parentNode.parentNode) {
+                if (rowCount <= 1) {
+                    alert("Cannot delete all the rows.");
+                    break;
+                }
+                table.deleteRow(i);
+                rowCount--;
+                i--;
+            }
+        }
+    } catch (e) {
+        alert(e);
+    }
+    //getValues();
+}
 	</script>
 	
 	<div id="rightBody"><h1>Calendar</h1>
