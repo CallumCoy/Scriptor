@@ -1,0 +1,6 @@
+The HTML and database were tested with the following edge cases:
+1) Passing "" to the database.
+2) Passing "null" to the database.
+3) Passing ""test"" to the database.
+
+All behaved as expected and none caused issues.
