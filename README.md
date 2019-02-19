@@ -40,6 +40,6 @@ For sprint one we aim to finish off a base plan.  We also hope to get the basic 
   - IOS Cases (not up yet)
   - Web Cases (not up yet)
   - Database Cases (not up yet)
-- Product Demonstration (not up yet)
+- [Product Demonstration](https://youtu.be/sif5wwbz4PEnot)
   - App Demonstration (not up yet)
-  - web Interface Demonstration (not up yet)
+
