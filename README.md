@@ -35,6 +35,8 @@ For sprint one we aim to finish off a base plan.  We also hope to get the basic 
   - [Andriod Code](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App)
   - [IOS Code](https://github.com/CallumCoy/Scriptor/tree/master/code/iOS)
   - [Web Code](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal%20Layout.html)
-- Test Cases (non are needed right now)
-- [Product Demonstration](https://youtu.be/sif5wwbz4PEnot)
+- Test Cases
+  - [Android Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/test)
+  - [iOS Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code)
+- [Product Demonstration(this link will redirect you to Youtube)](https://youtu.be/sif5wwbz4PEnot)
 
