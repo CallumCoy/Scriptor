@@ -29,8 +29,8 @@ For sprint one we aim to finish off a base plan.  We also hope to get the basic 
 - [Current Sprint Backlog](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Backlog/Sprint%201%20backlog.md)
   - [Burndown Chart (This will redirect you to Google Sheets)](https://docs.google.com/spreadsheets/d/1lUnZI9tesP9iD1U9ASGLT4vclyECX21mVmoN7oNkOxo/edit?usp=sharing)
 - Design Documents
-  -[UML Plan](https://github.com/CallumCoy/Scriptor/blob/master/Documents/UML%20Plan.md)
-  -[SQL plan](https://github.com/CallumCoy/Scriptor/blob/master/Documents/scriptorDBTables001.PNG)
+  - [UML Plan](https://github.com/CallumCoy/Scriptor/blob/master/Documents/UML%20Plan.md)
+  - [SQL plan](https://github.com/CallumCoy/Scriptor/blob/master/Documents/scriptorDBTables001.PNG)
 - [Source Code](https://github.com/CallumCoy/Scriptor/tree/master/code)
   - [Andriod Code](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App)
   - [IOS Code](https://github.com/CallumCoy/Scriptor/tree/master/code/iOS)
