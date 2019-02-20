@@ -1,9 +1,19 @@
                                   User Stories
 
-1. As a priest I want to be able to change the order of the songs for each service.
-2. As a priest I want to be able to search through the sermons
-3. As a priest I want to be able to print the schedule for songs that will be sung this service, in order.
-4. As a church goer I want to be able to see the current sermons that is been sung at the service.
-5. As a church goer I want to be able to access the options menu.
-6. As A church goer I want to be able to donate to the church through paypal at the push of button.
-7. As A member of the church I want to be able to connect to a external device to get today sermons.
+1. As a priest, I want to be able to change the order of the songs for each service.
+2. As a priest, I want to be able to search through the sermons
+3. As a priest, I want to be able to print the schedule for songs that will be sung this service, in order.
+
+
+5. As a church goer, I want to be able to access the options menu to edit the appearance of the application (font size, color).
+
+6. As A church goer, I want to be able to donate to the church through paypal at the push of button.
+
+4. As a church goer, I want to be able to see the current sermons that is been sung at the service.
+7. As A member of the church, I want to be able to connect to a external device to get today sermons.
+8. As a church goer, I want to be able to look access songs and sermons from previous and upcoming days.
+10. As a church goer, I want to highlight my favorite songs.
+
+11. As an administrator or priest, I want to be able to add songs to the database.
+12. As an administrator or priest, I want to be able to edit songs in the database.
+13. As an priest, I want to be able to see the length of the song in the database.

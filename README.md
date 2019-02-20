@@ -19,27 +19,24 @@ As of right now, there are no current modern alternatives for reading the songs 
 
 Scriptor beats both methods because it will be made around making the task of navigating through the songs of the day effortlessly.  This will be achieved since the priest will set up the order of the songs before the service.  The churchgoers will then be able to download the order of the songs for the next service.  Meaning members of the church will not need to search for the for the next song since the program will know what to show next.
 
-[A break up of each type can be found here](https://github.com/CallumCoy/Scriptor/blob/Cal's-Branch/Documents/Vision%20Statement)
+[A break up of each requirement can be found here](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Vision%20Statement)
 
 # Sprint 1
 
 For sprint one we aim to finish off a base plan.  We also hope to get the basic program done for android, IOS, web portal, and the database.  Although we do not plan on having them work in cohesion yet.
 
-- [Product Backlog](https://github.com/CallumCoy/Scriptor/blob/Cal's-Branch/Documents/Backlog/Product%20Backlog.md)
-- [Current Sprint Backlog](https://github.com/CallumCoy/Scriptor/blob/Cal's-Branch/Documents/Backlog/Sprint%201%20backlog.md)
+- [Product Backlog](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Backlog/Product%20Backlog.md)
+- [Current Sprint Backlog](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Backlog/Sprint%201%20backlog.md)
   - [Burndown Chart (This will redirect you to Google Sheets)](https://docs.google.com/spreadsheets/d/1lUnZI9tesP9iD1U9ASGLT4vclyECX21mVmoN7oNkOxo/edit?usp=sharing)
-- [Design Documents](Partially done)
-  -[UML Plan](https://github.com/CallumCoy/Scriptor/blob/Cal's-Branch/Documents/UML%20Plan.md)
-- [Source Code](https://github.com/CallumCoy/Scriptor/tree/Cal's-Branch/code)
-  - Andriod Code (not up yet)
-  - IOS Code (not up yet)
-  - Web Code (not up yet)
-  - Database Code (not up yet)
-- Test Cases (not up yet)
-  - Andriod Cases (not up yet)
-  - IOS Cases (not up yet)
-  - Web Cases (not up yet)
-  - Database Cases (not up yet)
-- Product Demonstration (not up yet)
-  - App Demonstration (not up yet)
-  - web Interface Demonstration (not up yet)
+- Design Documents
+  - [UML Plan](https://github.com/CallumCoy/Scriptor/blob/master/Documents/UML%20Plan.md)
+  - [SQL plan](https://github.com/CallumCoy/Scriptor/blob/master/Documents/scriptorDBTables001.PNG)
+- [Source Code](https://github.com/CallumCoy/Scriptor/tree/master/code)
+  - [Andriod Code](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App)
+  - [IOS Code](https://github.com/CallumCoy/Scriptor/tree/master/code/iOS)
+  - [Web Code](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal%20Layout.html)
+- Test Cases
+  - [Android Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/test)
+  - [iOS Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code)
+- [Product Demonstration(this link will redirect you to Youtube)](https://youtu.be/sif5wwbz4PEnot)
+
