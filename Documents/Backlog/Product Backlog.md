@@ -1,6 +1,6 @@
 # product Backlog
-| ID |User Story|Effort|Priority|Validation Criteria|Status|
-|:---:|---|:---:|:---:|---|:---:|:--:|
+| ID |User Story|Effort|Priority|Validation Criteria|Status|Who Completed This Task|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |01 | ~~As a priest, I want to be able to change the order of the songs for each service.~~| 3 | HIGH | A portal will be accesible by all priest that add their church | COMPLETED | Callum |
 |02 | ~~As a priest, I want to be able to search through the sermons.~~| 1 | HIGH | Implement a list of the available songs to the left of the portals screen. | COMPLETED | Callum |
 |03 | As a priest, I want to be able to print the schedule for songs that will be sung this service, in order. | 1 | HIGH | There will be a print feature on the portal app. | UNSTARTED |  |
@@ -18,11 +18,11 @@
 |15| As a churchgoer, I want to be able to see the current sermons that is been sung at the service.| 3 | MEDIUM | As the user goes through the song, the app will take you straight from the current song to the next. | UNSTARTED |  |
 |16| As A member of the church, I want to be able to connect to a external device to get today sermons.| 5 | HIGH | We will allow users to connect to either a raspberry Pi or Arduino, via bluetooth to get the current service. | UNSTARTED |  |
 |17| As a churchgoer, I want to be able to access songs and sermons from previous and upcoming days. | 4 | MEDUIM | We will have a menu were you can select what day you want to view the sermons from. | UNSTARTED |  |
-|18| As a churchgoer, I want to highlight my favorite songs. | 4 | LOW | Not sure | UNSTARTED |  | ~~~~~
+|18| As a churchgoer, I want to highlight my favorite songs. | 4 | LOW | Not sure | UNSTARTED |  |
 |19| As an administrator or priest, I want to be able to add songs to the database.| 3 | MEDUIM | we will add a tab to allow priests to add songs to there churches database. | UNSTARTED |  |
 |20| As an administrator or priest, I want to be able to edit songs in the database. | 2 | LOW | we will add a edit putton to the list of songs taht you can choose from. | UNSTARTED |  |
 |21| As an priest, I want to be able to see the length of the song in the database.| 10 | LOW | Each song is accompanied by the word count. | UNSTARTED |  |
-|23| As a priest, I want to be able to access the songs database via the net. | 4 | HIGH | We will have a portal website that accesses the database. | UNSTARTED|
-|24| As a priest I want to be able choose from a list of songs to sing during the ceremony. | 2 | MEDUIM | There will be a SQL database with a selection of songs. | UNSTARTED |
+|23| As a priest, I want to be able to access the songs database via the net. | 4 | HIGH | We will have a portal website that accesses the database. | UNSTARTED |  |
+|24| As a priest I want to be able choose from a list of songs to sing during the ceremony. | 2 | MEDUIM | There will be a SQL database with a selection of songs. | UNSTARTED |  |
 
 [Link for a easier time to edit. This data is not connected so this link will likely be more up to date](https://docs.google.com/spreadsheets/d/1XN6rKwXLS9GsNlR3xUBHYqMU5o3qh3YpbnUO6bJzAT0/edit?usp=sharing)
