@@ -1,8 +1,8 @@
 # product Backlog
 | ID |User Story|Effort|Priority|Validation Criteria|Status|
 |:---:|---|:---:|:---:|---|:---:|
-|01 | ~~As a priest, I want to be able to change the order of the songs for each service.~~| 3 | HIGH | A portal will be accesible by all priest that add their church | COMPLETE|
-|02 | ~~As a priest, I want to be able to search through the sermons.~~| 1 | HIGH | Iplement a list of the available songs to the left of the portals screen | DONE |
+|01 | ~~As a priest, I want to be able to change the order of the songs for each service.~~| 3 | HIGH | A portal will be accesible by all priest that add their church | COMPLETED |
+|02 | ~~As a priest, I want to be able to search through the sermons.~~| 1 | HIGH | Iplement a list of the available songs to the left of the portals screen | COMPLETED |
 |03 | As a priest, I want to be able to print the schedule for songs that will be sung this service, in order.| 1 | HIGH | There will be a print feature on the portal app. | UNSTARTED |
 |04 | As a priest, I want be able to scroll on the portal when my songs go off the screen.| 1 | HIGH | Ability to scroll on the list exists | UNSTARTED |
 |05 | As a priest, I want be able to select different days in a calendar and see the songs for that day.| 4 | MEDIUM | Ability to select a day on a calendar exists, and each day loads a different set of data | UNSTARTED |
@@ -11,7 +11,7 @@
 |08| As an administrator or priest, I want to be able to connect my PayPal account to the church’s profile on the app, so that my churchgoers can donate to my institution.| 8 | HIGH | Ability to register a PayPal account to a church to receive donations.| UNSTARTED |
 |09| As a priest, I want to be able to set up a account for my church account.| 6 | HIGH | Ability to search registered churches by name exists. | UNSTARTED |
 |10| As a priest, I want to be able to sign into my church on the portal| 5 | HIGH | Things won't be left out of date. | UNSTARTED |
-|11| ~~As a churchgoer, I want to be able to access the options menu to edit the appearance of the application (font size, color)~~.| 1 | 4 | There is a menu button on both the front page of the IOS and Android app | DONE |
+|11| ~~As a churchgoer, I want to be able to access the options menu to edit the appearance of the application (font size, color)~~.| 1 | 4 | There is a menu button on both the front page of the IOS and Android app | COMPLETED |
 |12| As a churchgoer, I want to be able to select which church I attend so I can access the correct songs| 5 | HIGH | Ability to select a registered church from the app exists. | UNSTARTED |
 |13| As a churchgoer, I want to be able to set the amount I am going to donate to the church, if at all.| 4 | LOW | Ability to set a number of dollars for donation exists. | UNSTARTED |
 |14| As a churchgoer, I want to be able to manually be able to search for the church I attend out of all the registered churches.| 4 | HIGH | Ability to sign in to church profile exists. | UNSTARTED |
