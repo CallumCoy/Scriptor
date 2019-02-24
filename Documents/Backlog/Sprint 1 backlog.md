@@ -1,4 +1,4 @@
-# product Backlog
+# Sprint 1 Backlog
 | ID |User Story|Effort|Priority|Validation Criteria|Status| Compeleted By |
 |:---:|---|:---:|:---:|---|:---:|:---:|
 00|~~As a church goer I want to be able to access the options menu.~~| 1 | 4 | There is a menu button on both the front page of the IOS and Andriod app | COMPLETED | Wanda |
