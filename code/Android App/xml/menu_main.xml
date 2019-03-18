@@ -9,4 +9,10 @@
         android:title="@string/action_settings"
         app:showAsAction="always" />
 
+    <item
+        android:id="@+id/paypal"
+        android:orderInCategory="50"
+        android:title="Paypal"
+        app:showAsAction="always" />
+
 </menu>
