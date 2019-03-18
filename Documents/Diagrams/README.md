@@ -33,7 +33,8 @@ You should list the assumptions, rules, and guidelines from external sources tha
   
   
   ## iOS Design
-
+  [iOS Diagram](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Diagrams/iOSDiagram.md)
+  
 # Resource Management
 
   ???
