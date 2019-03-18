@@ -9,4 +9,4 @@
 |020|As an administrator or priest, I want to be able to edit songs in the database.|2|LOW|we will add a edit putton to the list of songs that you can choose from.|UNSTARTED|???|
 |024|As a priest i want to be able to update the order of the songs once I have changed the priorities|10|HIGH|On the press of a button the order of the songs will be updated on the portal.|COMPLETED|Callum|
 
-(a set of tables can be here for easier editing)[https://docs.google.com/spreadsheets/d/1XN6rKwXLS9GsNlR3xUBHYqMU5o3qh3YpbnUO6bJzAT0/edit#gid=727202006]
+[a set of tables can be here for easier editing](https://docs.google.com/spreadsheets/d/1XN6rKwXLS9GsNlR3xUBHYqMU5o3qh3YpbnUO6bJzAT0/edit#gid=727202006)
