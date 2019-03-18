@@ -35,7 +35,25 @@ app.post('/sendData', function (req, res){
     res.send("Information Sent! You may close this window or go back to send something else."); 
 });
 
-console.log("Lisening on port 3000");
+app.get('/getChurches', function (req, res){
+    var church1 = {
+        name: "Our Lady of the Sign",
+        address: "7311 Lyons Rd. Coconut Creek, FL 33073",
+    };
+    var church2 = {
+        name: "Church of Scientology",
+        address: "123 Fake St. Fakeville, FK, 41958"
+    }; 
+    var church3 = {
+        name: "Mary Help of Christians",
+        address: "5980 N University Dr. Parkland, FL, 33076"
+    };
+    var toReturn = [church1, church2, church3];
+    
+    res.send(toReturn);
+});
+
+console.log("Listening on port 3000");
 
 app.get('/getData', function (req, res){
     var connection = mysql.createConnection({
