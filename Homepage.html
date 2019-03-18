@@ -1,0 +1,164 @@
+<html lang="en-US">
+<head>
+
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<script type="text/javascript" src="js/SeetingUpTable.js"></script>
+	<script type="text/javascript" src="js/DeletingARow.js"></script>
+	
+</head>
+
+<body>
+
+		<nav class="collapse">
+			<ul>
+		<select id="day">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+		</select>
+		
+		<select id="month">
+			<option value="1">Jan</option>
+			<option value="2">Feb</option>
+			<option value="3">Mar</option>
+			<option value="4">Apr</option>
+			<option value="5">May</option>
+			<option value="6">Jun</option>
+			<option value="7">Jul</option>
+			<option value="8">Aug</option>
+			<option value="9">Sep</option>
+			<option value="10">Oct</option>
+			<option value="11">Nov</option>
+			<option value="12">Dec</option>
+		</select>
+		
+		<select id="year">
+			<option value="2017">2017</option>
+			<option value="2018">2018</option>
+			<option value="2019">2019</option>
+			<option value="2020">2020</option>
+		</select>
+	
+				<li><a class="active" href="#Dashboard">Home</a></li>
+				<li><a href="#EditProfile">Edit Profile</a></li>
+				<li><a href="Login%20Page.html">Sign Out</a></li>
+			</ul>
+		</nav>
+
+		<h1 align:"center" >Scriptor</h1>
+	
+	<!-- This is the table
+	containing the songs that can be added to service -->
+	<div id="leftBody"><h1>Available Songs<h1>
+		<table style="margin-left:auto;margin-right:auto;" id="availableTableHTML">
+			<tr>
+				<th><ins>Song</ins></th>
+			</tr>
+			<tr>
+				<td>Star Spangled Banner</td>
+				<td><button onclick="getButtonInfo(this.id)" title="add song", style="text-align:center;", id="Star Spangled Banner", > add</td>
+			</tr>
+			<tr>
+				<td>God Save The Queen</td>
+				<td><button onclick="getButtonInfo(this.id)" title="add song", style="text-align:center;", id="God Save The Queen", > add</td>
+			</tr>
+		</table>
+	</div>
+	
+	<!-- This is a table with the columns place, followed by the name of the song -->
+	<div id="rightBody">
+	<h1> Order </h1>
+		<table style="margin-left:auto;margin-right:auto;" id="selectedTableHTML">
+			<tr>
+				<th title="The order that the song is in"><ins>Order</ins></th>
+				<th><ins>Song Name</ins></th>
+				<th><ins>New Order</ins></th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td><input type="text" name = "God Save The Queen" value = "1"</td>
+				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>2 1</td>
+				<td><input type="text" name = "Row1" value = "1"</td>
+				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>3 11</td>
+				<td><input type="text" name = "Row1" value = "11"</td>
+				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>4 3</td>
+				<td><input type="text" name = "Row1" value = "3"</td>
+				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>5 4</td>
+				<td><input type="text" name = "Row1" value = "4"</td>
+				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>6 6</td>
+				<td><input type="text" name = "Row1" value = "6"</td>
+				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>7 5</td>
+				<td><input type="text" name = "Row1" value = "5"</td>
+				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>8 5</td>
+				<td><input type="text" name = "Row1" value = "5"</td>
+				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
+			</tr
+			<tr>
+				<td>9</td>
+				<td>9 5</td>
+				<td><input type="text" name = "Row1" value = "5"</td>
+				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
+			</tr>
+		</table>
+		<button onclick="updateList()", title="Save The current order", style="font-size:150%;", style="text-align:center;"> Submit </button>
+	</div>
+</body>
+</html>
