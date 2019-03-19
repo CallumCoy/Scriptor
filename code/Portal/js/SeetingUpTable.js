@@ -61,7 +61,7 @@ function updateList(){
 }
 
 //clears entire table
-function clearTable(tableID, songs){
+function clearTable(tableID){
 
     var oTable = document.getElementById(tableID);
     var rowCount = oTable.rows.length;
