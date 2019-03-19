@@ -1,0 +1,12 @@
+TEST 015
+1. Click on Click to View Songs button on home page.
+2. This should lead to the Song Page.
+3. The song list should appear underneath the calendar.
+
+-----------
+FOR SPRINT 2:
+For now:
+
+Step 1:
+Action: Click on Click to View Today's Songs and Sermons button that should be on homepage
+Observation: The button should disappear and song list should appear
