@@ -1,4 +1,6 @@
 # Sprint 2 Backlog
+| ID |User Story|Effort|Priority|Validation Criteria|Status| Completed by |
+|:---:|---|:---:|:---:|---|:---:|:---:|
 | 004 | As a priest, I want to be able to scroll on the portal when my songs go off the screen. | 1 | HIGH | Ability to scroll on the list exists. | COMPLETED | Callum| 
 | 005 | As a priest, I want to be able to select different days in a calendar and see the songs for that day. | 4 | MEDIUM | Ability to select a day on a calendar, and each day loads a different set of data. | COMPLETED | Callum| 
 | 009 | As a priest, I want to be able to set up an account for my church account. | 6 | HIGH | Ability to search registered churches by name exists. | COMPLETED | Adrian| 
