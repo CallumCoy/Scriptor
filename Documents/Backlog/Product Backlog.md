@@ -2,7 +2,6 @@
 
 | ID |User Story|Effort|Priority|Validation Criteria|Status|Who Completed This Task|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-
 |001|~~As a priest, I want to be able to change the order of the songs for each service.~~|3|HIGH|A portal will be accessible by all priest that add their church.|COMPLETED|Callum|
 |002|~~As a priest, I want to be able to search through the sermons.~~|1|HIGH|Implement a list of the available songs to the left of the portals screen.|COMPLETED|Callum|
 |003|As a priest, I want to be able to print the schedule for songs that will be sung this service, in order.|3|HIGH|There will be a print feature on the portal app.|INPOGRESS|Callum|
