@@ -26,6 +26,6 @@
 |022|As a priest, I want to be able to access the songs database via the net.|4|HIGH|We will have a portal website that accesses the database.|UNSTARTED||
 |023|As a priest I want to be able to choose from a list of songs to sing during the ceremony.|2|MEDUIM|There will be a SQL database with a selection of songs|UNSTARTED||
 |024|~~As a priest I want to be able to add songs to my playlist.~~|3|HIGH|There will be a list of the songs to add to the playlist.|COMPLETED|Callum|
-|025|~~As a priest I want my list to be ordered once I have updated the order of the songs.~~|10|HIGH|There will be a button that once pressed it will update the order of songs on the portal.|COMPLETED|Callum|
+|026|~~As a priest I want my list to be ordered once I have updated the order of the songs.~~|10|HIGH|There will be a button that once pressed it will update the order of songs on the portal.|COMPLETED|Callum|
 
 [Link for an easier time to edit. This data is not connected to this link will likely be more up to date](https://docs.google.com/spreadsheets/d/1XN6rKwXLS9GsNlR3xUBHYqMU5o3qh3YpbnUO6bJzAT0/edit?usp=sharing)
