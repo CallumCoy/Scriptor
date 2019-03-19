@@ -38,7 +38,7 @@ For sprint one we aim to finish off a base plan.  We also hope to get the basic 
   - [Web Code](https://github.com/CallumCoy/Scriptor/tree/master/code/Portal)
 - Test Cases
   - [Android Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/test)
-  - [iOS Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code)
+  - [iOS Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/iOS/tests)
   - [Portal](https://github.com/CallumCoy/Scriptor/tree/master/code/Portal) 
     - [Manual Testing](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal/Manual%20Tests%20for%20the%20portal.md)
     - [Autonatic Testing](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal/js/automaticTests.js)
@@ -61,9 +61,9 @@ For Sprint two we hope to have all of the mandatory feature for the portal, and 
   - [Web Code](https://github.com/CallumCoy/Scriptor/tree/master/code/Portal)
 - Test Cases
   - [Android Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/test)
-  - [iOS Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code)
+  - [iOS Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/iOS/tests)
   - [Portal](https://github.com/CallumCoy/Scriptor/tree/master/code/Portal) 
     - [Manual Testing](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal/Manual%20Tests%20for%20the%20portal.md)
-    - [Autonatic Testing](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal/js/automaticTests.js)
+    - [Automatic Testing](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal/js/automaticTests.js)
 - [Product Demonstration(this link will redirect you to Youtube)]()
-  -[portal Demo](https://youtu.be/83duwnNKTvY)
+  - [portal Demo](https://youtu.be/83duwnNKTvY)
