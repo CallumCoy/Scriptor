@@ -14,7 +14,7 @@
 |009|As a priest, I want to be able to set up an account for my church account.|6|HIGH|Ability to search registered churches by name exists.|UNSTARTED||
 |010|As a priest, I want to be able to sign into my church on the portal.|5|HIGH|Things won't be left out of date.|UNSTARTED||
 |011|~~As a churchgoer, I want to be able to access the options menu to edit the appearance of the application (font size, color)~~.|1|MEDUIM|There is a menu button on both the front page of the IOS and Android app.|COMPLETED|Wanda|
-|012|As a churchgoer, I want to be able to select which church I attend so I can access the correct songs|5|HIGH|Ability to select a registered church from the app exists.|UNSTARTED||
+|012|~~As a churchgoer, I want to be able to select which church I attend so I can access the correct songs|5|HIGH|Ability to select a registered church from the app exists.~~|Completeed|Adrian & Wanda|
 |013| ~~As a churchgoer, I want to be able to set the amount I am going to donate to the church, if at all.~~|4|LOW|Ability to set a number of dollars for donation exists. |CANCELED|Scrapped, no way to make separate church accounts without something like Vimeo.|
 |014|~~As a churchgoer, I want to be able to manually be able to search for the church I attend out of all the registered churches.~~|4|HIGH|Ability to sign in to church profile exists.|CANCELED|Scrapped, no way to make separate church accounts without something like Vimeo.|
 |015|As a churchgoer, I want to be able to see the current sermons that are been sung at the service.|3|LOW|As the user goes through the song, the app will take you straight from the current song to the next.|UNSTARTED||
