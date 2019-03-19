@@ -1,0 +1,13 @@
+TEST 011
+
+Step 1:
+Action: Click Settings button on top right of screen.
+Observation: Should open to Settings Page.
+
+Step 2:
+Action: Click on small size button
+Observation: Should change text to smaller size
+
+Step 3:
+Action: Repeat step 2 for normal, medium, and large buttons
+Observation: Should change text size in respect to button being clicked.
