@@ -22,7 +22,6 @@
 |017|As a churchgoer, I want to be able to access songs and sermons from previous and upcoming days.|4|MEDUIM|We will have a menu where you can select what day you want to view the sermons from.|UNSTARTED||
 |019|As an administrator or priest, I want to be able to add songs to the database.|3|MEDUIM|we will add a tab to allow priests to add songs to there churches database.|UNSTARTED||
 |020|As an administrator or priest, I want to be able to edit songs in the database.|2|LOW|we will add an edit button to the list of songs that you can choose from.|UNSTARTED||
-|021|As a priest, I want to be able to see the length of the song in the database.|10|LOW|Each song is accompanied by the word count.|UNSTARTED||
 |022|As a priest, I want to be able to access the songs database via the net.|4|HIGH|We will have a portal website that accesses the database.|UNSTARTED||
 |023|As a priest I want to be able to choose from a list of songs to sing during the ceremony.|2|MEDUIM|There will be a SQL database with a selection of songs|UNSTARTED||
 |024|~~As a priest I want to be able to add songs to my playlist.~~|3|HIGH|There will be a list of the songs to add to the playlist.|COMPLETED|Callum|
