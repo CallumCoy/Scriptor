@@ -19,7 +19,7 @@ As of right now, there are no current modern alternatives for reading the songs 
 
 Scriptor beats both methods because it will be made around making the task of navigating through the songs of the day effortlessly.  This will be achieved since the priest will set up the order of the songs before the service.  The churchgoers will then be able to download the order of the songs for the next service.  Meaning members of the church will not need to search for the next song since the program will know what to show next.
 
-[A break up of each requirement can be found here](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Vision%20Statement)
+[A break up of each requirement can be found here](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Requirements.md)
 
 # Sprint 1
 
@@ -60,7 +60,8 @@ For Sprint two we hope to have all of the mandatory features for the portal, and
   - [IOS Code](https://github.com/CallumCoy/Scriptor/tree/master/code/iOS)
   - [Web Code](https://github.com/CallumCoy/Scriptor/tree/master/code/Portal)
 - Test Cases
-  - [Android Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/test)
+  - [Android Manual Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/Manual%20Tests)
+  - [Android Automatic Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/src/test/java/com/scriptor)
   - [iOS Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/iOS/tests)
   - [Portal](https://github.com/CallumCoy/Scriptor/tree/master/code/Portal) 
     - [Manual Testing](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal/Manual%20Tests%20for%20the%20portal.md)
