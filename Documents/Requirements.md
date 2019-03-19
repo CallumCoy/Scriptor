@@ -34,7 +34,7 @@
 | 031 | 020 | Upon clicking submit it will update the song. | UNSTARTED |
 | 032 | 021 | Each song within the database will have a word count with it. | UNSTARTED |
 | 033 | 022 | The app will connect to the song list database. | UNSTARTED |
-| 034 | 022 | The portal will connect to the database.	UNSTARTED |
+| 034 | 022 | The portal will connect to the database. | UNSTARTED |
 | 035 | 023 | The list of songs from requirement 1 will pull data from the song database. | UNSTARTED |
 | 036 | 024 |There will be a submit button, that will look at the list of selected songs and the inputted order.  It will then rearange them so that the songs reflect the user inputted order.|COMPLETED|
 
