@@ -36,5 +36,6 @@
 | 033 | 022 | The app will connect to the song list database. | UNSTARTED |
 | 034 | 022 | The portal will connect to the database.	UNSTARTED |
 | 035 | 023 | The list of songs from requirement 1 will pull data from the song database. | UNSTARTED |
+| 036 | 024 |There will be a submit button, that will look at the list of selected songs and the inputted order.  It will then rearange them so that the songs reflect the user inputted order.|COMPLETED|
 
 [Can also be found on the spreed sheet](https://docs.google.com/spreadsheets/d/1XN6rKwXLS9GsNlR3xUBHYqMU5o3qh3YpbnUO6bJzAT0/edit#gid=1934002586)
