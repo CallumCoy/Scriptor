@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Scriptor</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <string-array name="church_array">
+        <item>Church 1</item>
+        <item>Church 2</item>
+    </string-array>
+
+</resources>

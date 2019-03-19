@@ -1,0 +1,4 @@
+#Mon Mar 18 20:10:36 EDT 2019
+base.0=C\:\\Users\\Adrian\\Downloads\\Scriptor2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+path.0=classes.dex
+renamed.0=classes.dex
