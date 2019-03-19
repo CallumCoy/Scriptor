@@ -1,0 +1,17 @@
+TEST 013
+
+Step 1:
+Action: Click Settings button on top right of screen.
+Observation: Should open to Settings Page.
+
+Step 2:
+Action: Click on church selection drop down menu 
+Observation: Should open drop down menu and show church options
+
+Step 3:
+Action: Click on a church item
+Observation: Should automatically save church preference
+
+Step 4:
+Action: Exit app and open settings page again
+Observation: Church selection made from last time should still be selected.
