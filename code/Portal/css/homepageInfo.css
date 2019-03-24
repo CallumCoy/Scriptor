@@ -1,0 +1,51 @@
+/* setting up the default table design */
+table{
+	margin-left:0 auto;
+	margin-right:0 auto;
+	border-collapse: separate;
+	border-spacing: 10px;
+	width:100%;
+}
+
+td,th{
+	border: 1px solid #c8c9ca;
+	border-spacing:0px;
+	text-align:left;
+	padding:12px;
+	margin:12px;
+}
+
+tr:nth-child(even){
+	background-color: #c8c9ca
+}
+
+tr:nth-child(odd){
+	background-color: #c829ca
+}
+
+/*end of declaring the default table
+start od spliting the screen up */
+
+#leftBody{
+	position:fixed;
+	top: 16%;
+	left: 0;
+	height:82%;
+	width:29.5%;
+	background-color:#F2CCF3;
+	margin:auto;
+	text-align:left;
+	overflow:auto;
+}
+
+#rightBody{
+	position:fixed;
+	top: 16%;
+	left: 30.5%;
+	height:82%;
+	width:69%;
+	background-color:#F3DECC;
+	margin:auto;
+	text-align:left;
+	overflow:auto;
+}
