@@ -60,6 +60,8 @@ body{
 	padding:0;
 	height:100%;
 	text-align:middle;
+	background: radial-gradient(#33ccff 0%, #0099ff 100%);
+}
 }
 
 input{
@@ -77,10 +79,13 @@ div {
 
 #leftBody{
 	top: 16%;
-	left: 0;
-	height:82%;
-	width:29.5%;
-	background-color:#F2CCF3;
+	left: 30px;
+	height:calc(100% - 16% - 30px);
+	width:calc(30% - 36px);
+	padding: 5px;   
+	background: linear-gradient(to bottom left, #ffff99 0%, #ffcc00 100%);
+	border-radius: 5px 0px 0px 5px;
+    border: 1px solid #0d0d0d;
 	margin:auto;
 	text-align:left;
 	overflow:auto;
@@ -88,10 +93,13 @@ div {
 
 #rightBody{
 	top: 16%;
-	left: 30.5%;
-	height:82%;
-	width:69%;
-	background-color:#F3DECC;
+	left: calc(30% + 6px);
+	height:calc(100% - 16% - 30px);
+	width:calc(69% - 66px);
+    background: linear-gradient(to bottom right, #ffff99 0%, #ffcc00 100%);
+	border-radius: 0 5px 5px 0;
+    border: 1px solid #0d0d0d;
+	padding: 5px 20px;
 	margin:auto;
 	text-align:left;
 	overflow:auto;

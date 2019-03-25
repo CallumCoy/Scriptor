@@ -17,16 +17,17 @@ td,th{
 
 
 .editProfileBackBox{
-	height: 275px;
-	width: 475px;
+	height: 250px;
+	width: 500px;
 	background-color: gray;
 	border-radius: 5px 5px 5px 5px;
+	Border: 1px solid black;
 	position:fixed;
 	margin: 0 auto;
-	top: 40%;
+	top: 50%;
 	left: 50%;
 	text-align: center;
-	margin-top: -75px;
-	margin-left: -200px;
+	margin-top: -125px;
+	margin-left: -250px;
 	padding: 1% 0 1% 0;
 }
