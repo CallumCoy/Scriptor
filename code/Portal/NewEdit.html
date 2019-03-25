@@ -1,0 +1,53 @@
+<html lang="en-US">
+<head>
+
+	<link rel="stylesheet" href="css/BaseStyles.css" />
+	<link rel="stylesheet" href="css/homepageInfo.css" />
+	<link rel="stylesheet" href="css/NewEditStyles.css" />
+
+	<script type="text/javascript" src="js/automaticTests.js"></script> 
+	<script type="text/javascript" src="js/SeetingUpTable.js"></script>
+	<script type="text/javascript" src="js/DeletingARow.js"></script>
+	
+</head>
+
+<body>
+	<nav class="collapse">
+			<ul>	
+				<li><a class="active" href="Homepage.html">Home</a></li><li><a href="Homepage.html">Edit/Add Songs</a></li>
+				<li><a href="#EditProfile">Edit Profile</a></li>
+				<li><a href="Login%20Page.html">Sign Out</a></li>
+			</ul>
+		</nav>
+
+		<h1 align:"center" >Scriptor</h1>
+	
+	<!-- This is the table
+	containing the songs that can be added to service -->
+	<div id="leftBody"><h1>Available Songs<h1>
+		<table style="margin-left:auto;margin-right:auto;" id="availableTableHTML">
+			<tr>
+				<th><ins>Song</ins></th>
+			</tr>
+			<tr>
+				<td>Star Spangled Banner</td>
+				<td><button onclick="getButtonInfo(this.id)" title="edit", style="text-align:center;", id="Star Spangled Banner", > edit</td>
+			</tr>
+			<tr>
+				<td>God Save The Queen</td>
+				<td><button onclick="getButtonInfo(this.id)" title="edit", style="text-align:center;", id="God Save The Queen", > edit</td>
+			</tr>
+		</table>
+	</div>
+	
+	<!-- This is a table with the columns place, followed by the name of the song -->
+	<div id="rightBody">
+	<h1> Edit </h1>
+	
+		<textarea class="scrollabletextbox" name="lyrics">
+		</textarea>
+		<button onclick="updateList()", title="Save The current order", style="font-size:150%;", style="text-align:center;"> Submit </button>
+		
+		<!--<button onclick="BeginTheTests()",style="font-size:150%;", style="text-align:center;">TESTS</button> -->
+	</div>
+</body>

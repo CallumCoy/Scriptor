@@ -49,3 +49,10 @@ start od spliting the screen up */
 	text-align:left;
 	overflow:auto;
 }
+
+.scrollabletextbox {
+	rest: center;
+    height: calc(100% - 120px);
+    width: calc(100% - 5px);
+    overflow:scroll;
+}

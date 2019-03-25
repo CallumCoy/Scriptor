@@ -1,0 +1,7 @@
+/*Styles for the editing page of Scriptor*/
+.scrollabletextbox {
+	rest: center;
+    height: calc(100% - 120px);
+    width: calc(100% - 5px);
+    overflow:scroll;
+}
