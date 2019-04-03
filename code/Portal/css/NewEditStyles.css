@@ -17,7 +17,7 @@ td,th{
 
 .scrollabletextbox {
 	rest: center;
-    height: calc(100% - 130px);
+    height: calc(100% - 180px);
     width: calc(100% - 20px);
     overflow:scroll;
 }

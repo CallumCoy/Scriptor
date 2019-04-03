@@ -29,15 +29,15 @@
 		<table style="margin-left:auto;margin-right:auto;" id="availableTableHTML">
 			<tr>
 				<th><ins>Song</ins></th>
-				<td><button onclick="getButtonInfo(this.id)" title="edit", style="text-align:center;", id="addSong", > Add Song</td>
+				<td><button title="edit", style="text-align:center;", id="addSong", > Add Song</td>
 			</tr>
 			<tr>
 				<td>Star Spangled Banner</td>
-				<td><button onclick="getButtonInfo(this.id)" title="edit", style="text-align:center;", id="Star Spangled Banner", > edit</td>
+				<td><button onclick="selectSong(this.id)" title="edit", style="text-align:center;", id="Star Spangled Banner", > edit</td>
 			</tr>
 			<tr>
 				<td>God Save The Queen</td>
-				<td><button onclick="getButtonInfo(this.id)" title="edit", style="text-align:center;", id="God Save The Queen", > edit</td>
+				<td><button onclick="selectSong(this.id)" title="edit", style="text-align:center;", id="God Save The Queen", > edit</td>
 			</tr>
 		</table>
 	</div>
@@ -45,10 +45,12 @@
 	<!-- This is a table with the columns place, followed by the name of the song -->
 	<div id="rightBody">
 	<h1> Edit </h1>
-	
-		<textarea class="scrollabletextbox" name="lyrics">
+		Song Name <br> 
+		<input id="songName">  </input>
+		<br>Lyrics
+		<textarea class="scrollabletextbox" id="lyrics">
 		</textarea>
-		<button onclick="updateList()", title="Save The current order", style="font-size:150%;", style="text-align:center;"> Submit </button>
+		<button onclick="saveSong()", style="font-size:150%;", style="text-align:center;"> Save </button>
 		
 		<!--<button onclick="BeginTheTests()",style="font-size:150%;", style="text-align:center;">TESTS</button> -->
 	</div>
