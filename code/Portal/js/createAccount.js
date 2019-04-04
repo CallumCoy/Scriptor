@@ -43,7 +43,7 @@ function handleSignUp() {
 	// [END_EXCLUDE]
   });
 
-	userName = firebase.auth().currentUser.uid;
+	var userName = firebase.auth().currentUser.uid;
 	
 	var churchName= document.getElementById('churchName').value;
 	var data = {

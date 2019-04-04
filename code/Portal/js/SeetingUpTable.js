@@ -71,6 +71,9 @@ function updateList(){
 //clears entire table
 function clearTable(tableID){
 
+	var userName = firebase.auth().currentUser.uid;
+	firebase.database().ref().child('/schedule/' + userName+ '/' + selDate).removeItem();
+	
     var oTable = document.getElementById(tableID);
     var rowCount = oTable.rows.length;
 
