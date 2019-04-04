@@ -7,7 +7,7 @@
 	  var config = {
 		apiKey: "AIzaSyBqvTFL0FUKUoLE0xQr3X-yhC4HsqLYZE0",
 		authDomain: "scriptor-a57b1.firebaseapp.com",
-		databaseURL: "https://scriptor-a57b1.firebaseio.com",
+		databaseURL: "https://scriptor-a57b1.firebaseio.com/ ",
 		projectId: "scriptor-a57b1",
 		storageBucket: "scriptor-a57b1.appspot.com",
 		messagingSenderId: "357246850306"
@@ -18,7 +18,8 @@
 	<script src="/__/firebase/5.9.2/firebase-app.js"></script>
 	<script src="/__/firebase/5.9.2/firebase-auth.js"></script>
 	<script src="/__/firebase/init.js"></script>
-	<script type="text/javascript" src="js/signOut.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script type="text/javascript" src="js/saveSongs.js"></script>
 
 	<link rel="stylesheet" href="css/BaseStyles.css" />
 	<link rel="stylesheet" href="css/homepageInfo.css" />
@@ -36,7 +37,7 @@
 				<li><a href="Homepage.html">Home</a></li>
 				<li><a class="active">Edit/Add Songs</a></li>
 				<li><a href="#EditProfile">Edit Profile</a></li>
-				<li><a onclick="logOut()">Sign Out</a></li>
+				<button onclick="logOut()">Sign Out</button>
 			</ul>
 		</nav>
 
@@ -48,7 +49,7 @@
 		<table style="margin-left:auto;margin-right:auto;" id="availableTableHTML">
 			<tr>
 				<th><ins>Song</ins></th>
-				<td><button title="edit", style="text-align:center;", id="addSong", > Add Song</td>
+				<td></td>
 			</tr>
 			<tr>
 				<td>Star Spangled Banner</td>
@@ -67,9 +68,9 @@
 		Song Name <br> 
 		<input id="songName">  </input>
 		<br>Lyrics
-		<textarea class="scrollabletextbox" id="lyrics">
+		<textarea class="scrollabletextbox" id="lyrics" value="">
 		</textarea>
-		<button onclick="saveSong()", style="font-size:150%;", style="text-align:center;"> Save </button>
+		<button onclick="saveSong();", style="font-size:150%;", style="text-align:center;"> Save </button>
 		
 		<!--<button onclick="BeginTheTests()",style="font-size:150%;", style="text-align:center;">TESTS</button> -->
 	</div>

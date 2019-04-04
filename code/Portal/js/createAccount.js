@@ -2,8 +2,6 @@ function passwordCheck(){
 	Password = document.getElementById("Password").value;
 	PasswordComfirm = document.getElementById("PasswordComfirm").value;
 	
-	document.getElementById("email").value = ("Password");
-	
 	if((Password.localeCompare(PasswordComfirm)) === 0){
 		if (Password.length < 4) {
 			alert('Please enter a password of atleast length 4.');
@@ -17,7 +15,7 @@ function passwordCheck(){
 }
 
 function handleSignUp() {
-  var email = document.getElementById('email').value;
+ var email = document.getElementById('email').value;
   var password = document.getElementById('Password').value;
   if (email.length < 4) {
 	alert('Please enter an email address.');
@@ -44,12 +42,23 @@ function handleSignUp() {
 	console.log(error);
 	// [END_EXCLUDE]
   });
-	alert("stuff happened");
+
+	userName = firebase.auth().currentUser.uid;
+	
+	var churchName= document.getElementById('churchName').value;
+	var data = {
+		name: churchName,
+		address: 'pie'
+	}
+	  
+		firebase.database().ref().child('/churches/' + userName ).set(data);
+  
   // [END createwithemail]
 }
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
-	window.location = "Homepage.html"; //if it logs on successfuly it will got to the dashboard
+	
+		window.location = "Homepage.html"; //if it logs on successfuly it will got to the dashboard
   }
 });

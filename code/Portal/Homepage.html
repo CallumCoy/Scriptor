@@ -18,6 +18,8 @@
 	<script src="/__/firebase/5.9.2/firebase-app.js"></script>
 	<script src="/__/firebase/5.9.2/firebase-auth.js"></script>
 	<script src="/__/firebase/init.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 	<script type="text/javascript" src="js/signOut.js"></script>
 	<script type="text/javascript" src="js/automaticTests.js"></script> 
 	<script type="text/javascript" src="js/SeetingUpTable.js"></script>
@@ -33,7 +35,7 @@
 
 		<nav class="collapse">
 			<ul>
-		<select id="day">
+		<select id="ddday">
 			<option value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -67,7 +69,7 @@
 			<option value="31">31</option>
 		</select>
 		
-		<select id="month">
+		<select id="ddmonth">
 			<option value="1">Jan</option>
 			<option value="2">Feb</option>
 			<option value="3">Mar</option>
@@ -82,7 +84,7 @@
 			<option value="12">Dec</option>
 		</select>
 		
-		<select id="year">
+		<select id="ddyear">
 			<option value="2017">2017</option>
 			<option value="2018">2018</option>
 			<option value="2019">2019</option>
@@ -90,6 +92,7 @@
 		</select>
 	
 				<li><a class="active" href="#Dashboard">Home</a></li>
+				<li><a href="NewEdit.html">Edit/Add Songs</a></li>
 				<li><a href="EditProfile.html">Edit Profile</a></li>
 				<button onclick="logOut()">Sign Out</button>
 			</ul>
