@@ -42,23 +42,23 @@ function handleSignUp() {
 	console.log(error);
 	// [END_EXCLUDE]
   });
-
-	var userName = firebase.auth().currentUser.uid;
-	
-	var churchName= document.getElementById('churchName').value;
-	var data = {
-		name: churchName,
-		address: 'pie'
-	}
-	  
-		firebase.database().ref().child('/churches/' + userName ).set(data);
   
   // [END createwithemail]
 }
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
+	  
+	var userName = user.uid;
+
+	var churchName= document.getElementById('churchName').value;
+	var data = {
+		name: churchName,
+		address: 'pie',
+	}
 	
+	firebase.database().ref().child('/churches/' + userName ).set(data).then( function(){	  
 		window.location = "Homepage.html"; //if it logs on successfuly it will got to the dashboard
+	});
   }
 });
