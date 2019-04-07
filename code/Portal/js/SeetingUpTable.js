@@ -22,6 +22,14 @@ function addToSelectedTable(oTable, name){
 		lastNumber = 1;
 	}
 	
+	var userName = firebase.auth().currentUser.uid;
+	var selDate = getDate();
+	var data = {
+		songName: name,
+	}
+	  
+	firebase.database().ref().child('/schedule/' + userName+ '/' + selDate + '/' + lastNumber).set(data);
+	
 	//writes the row into html language
 	curPlace.innerHTML = lastNumber;
 	songName.innerHTML = name;
@@ -40,12 +48,8 @@ function updateList(){
 	 
 	//this takes all the current data in the table, and save it into a array, along with it's desired position
 	for(i = 1; i < rowCount; i++){
-		var oCells = oTable.rows.item(i).cells;
-		
-		var songName = (oCells.item(1).innerHTML);
-		var priority = (oCells.item(2).children[0].value);
-		
-		songs.push([songName, priority]);
+		var name = (oCells.item(1).innerHTML);
+		points.sort(function(a, b){return b-a});	
 	}
 	
 	//clears the table so it is a fresh start;
@@ -63,6 +67,10 @@ function updateList(){
 //clears entire table
 function clearTable(tableID){
 
+	var userName = firebase.auth().currentUser.uid;
+	var selDate = getDate();
+	firebase.database().ref().child('/schedule/' + userName+ '/' + selDate).remove();
+	
     var oTable = document.getElementById(tableID);
     var rowCount = oTable.rows.length;
 
@@ -76,6 +84,7 @@ function clearTable(tableID){
 
 //mass enters the values from an array into a table
 function MakeTable(tableID, songs){
+		
 	var oTable = document.getElementById(tableID);
 	var i;
 	
@@ -83,4 +92,14 @@ function MakeTable(tableID, songs){
 	for( i= 1; i < songs.length; i++){
 		addToSelectedTable(oTable, songs[i][0]);
 	}
+}
+
+function getDate(){
+	var date = "";
+	date = date.concat(document.getElementById("ddday").value);
+	date = date.concat("_");
+	date = date.concat(document.getElementById("ddmonth").value);
+	date = date.concat("_");
+	date = date.concat(document.getElementById("ddyear").value);
+	return(date);
 }

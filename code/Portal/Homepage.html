@@ -1,19 +1,42 @@
 <html lang="en-US">
 <head>
 
-	<link rel="stylesheet" href="css/styles.css" />
-
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyBqvTFL0FUKUoLE0xQr3X-yhC4HsqLYZE0",
+		authDomain: "scriptor-a57b1.firebaseapp.com",
+		databaseURL: "https://scriptor-a57b1.firebaseio.com",
+		projectId: "scriptor-a57b1",
+		storageBucket: "scriptor-a57b1.appspot.com",
+		messagingSenderId: "357246850306"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<script src="/__/firebase/5.9.2/firebase-app.js"></script>
+	<script src="/__/firebase/5.9.2/firebase-auth.js"></script>
+	<script src="/__/firebase/init.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script type="text/javascript" src="js/signOut.js"></script>
 	<script type="text/javascript" src="js/automaticTests.js"></script> 
 	<script type="text/javascript" src="js/SeetingUpTable.js"></script>
 	<script type="text/javascript" src="js/DeletingARow.js"></script>
+	<script type="text/javascript" src="js/dateSetUp.js"></script>
+	<script type="text/javascript" src="js/availableSongListFunctions.js"></script>
+
+	<link rel="stylesheet" href="css/BaseStyles.css" />
+	<link rel="stylesheet" href="css/homepageInfo.css" />
+
 	
 </head>
 
-<body>
+<body onLoad='setDate()'>
 
 		<nav class="collapse">
 			<ul>
-		<select id="day">
+		<select id="ddday">
 			<option value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -47,7 +70,7 @@
 			<option value="31">31</option>
 		</select>
 		
-		<select id="month">
+		<select id="ddmonth">
 			<option value="1">Jan</option>
 			<option value="2">Feb</option>
 			<option value="3">Mar</option>
@@ -62,7 +85,7 @@
 			<option value="12">Dec</option>
 		</select>
 		
-		<select id="year">
+		<select id="ddyear">
 			<option value="2017">2017</option>
 			<option value="2018">2018</option>
 			<option value="2019">2019</option>
@@ -70,8 +93,9 @@
 		</select>
 	
 				<li><a class="active" href="#Dashboard">Home</a></li>
-				<li><a href="#EditProfile">Edit Profile</a></li>
-				<li><a href="Login%20Page.html">Sign Out</a></li>
+				<li><a href="NewEdit.html">Edit/Add Songs</a></li>
+				<li><a href="EditProfile.html">Edit Profile</a></li>
+				<button onclick="logOut()">Sign Out</button>
 			</ul>
 		</nav>
 
@@ -83,14 +107,7 @@
 		<table style="margin-left:auto;margin-right:auto;" id="availableTableHTML">
 			<tr>
 				<th><ins>Song</ins></th>
-			</tr>
-			<tr>
-				<td>Star Spangled Banner</td>
-				<td><button onclick="getButtonInfo(this.id)" title="add song", style="text-align:center;", id="Star Spangled Banner", > add</td>
-			</tr>
-			<tr>
-				<td>God Save The Queen</td>
-				<td><button onclick="getButtonInfo(this.id)" title="add song", style="text-align:center;", id="God Save The Queen", > add</td>
+				<th><ins>Add</ins></th>
 			</tr>
 		</table>
 	</div>
@@ -103,60 +120,7 @@
 				<th title="The order that the song is in"><ins>Order</ins></th>
 				<th><ins>Song Name</ins></th>
 				<th><ins>New Order</ins></th>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>1</td>
-				<td><input type="text" name = "God Save The Queen" value = "1"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>2 1</td>
-				<td><input type="text" name = "Row1" value = "1"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>3 11</td>
-				<td><input type="text" name = "Row1" value = "11"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>4 3</td>
-				<td><input type="text" name = "Row1" value = "3"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>5 4</td>
-				<td><input type="text" name = "Row1" value = "4"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>6 6</td>
-				<td><input type="text" name = "Row1" value = "6"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>7 5</td>
-				<td><input type="text" name = "Row1" value = "5"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>8</td>
-				<td>8 5</td>
-				<td><input type="text" name = "Row1" value = "5"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr
-			<tr>
-				<td>9</td>
-				<td>9 5</td>
-				<td><input type="text" name = "Row1" value = "5"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
+				<th><ins>Remove</ins></th>
 			</tr>
 		</table>
 		<button onclick="updateList()", title="Save The current order", style="font-size:150%;", style="text-align:center;"> Submit </button>
