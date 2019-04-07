@@ -137,26 +137,12 @@ h1{
 	margin = 10px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
 .ceneterDiv{
 	margin:0 auto;
 }
 
 .loginPadding{
-	height: 250px;
+	height: 280px;
 	width: 475px;
 	background-color: gray;
 	border-radius: 5px 5px 5px 5px;

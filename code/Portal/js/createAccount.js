@@ -52,9 +52,11 @@ firebase.auth().onAuthStateChanged(function(user) {
 	var userName = user.uid;
 
 	var churchName= document.getElementById('churchName').value;
+	var address = document.getElementById('Address').value;
+	
 	var data = {
 		name: churchName,
-		address: 'pie',
+		address: address,
 	}
 	
 	firebase.database().ref().child('/churches/' + userName ).set(data).then( function(){	  

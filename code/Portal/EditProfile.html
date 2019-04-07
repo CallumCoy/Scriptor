@@ -20,6 +20,7 @@
 	<script src="/__/firebase/init.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 	<script type="text/javascript" src="js/signOut.js"></script>
+	<script type="text/javascript" src="js/updateUserSettings.js"></script>
 
 	<link rel="stylesheet" href="css/BaseStyles.css" />
 	<link rel="stylesheet" href="css/EditProfile.css" />
@@ -31,14 +32,14 @@
 	<nav class="collapse">
 		<ul>	
 			<li><a href="Homepage.html">Home</a></li>
-			<li><a href="NewEdit.html">Edit/Add Songs</a></li>
-			<li><a class="active">Edit Profile</a></li>
+			<li><a aclass="active">Edit/Add Songs</a></li>
+			<li><a href="EditProfile.html">Edit Profile</a></li>
 			<button onclick="logOut()">Sign Out</button>
 		</ul>
 	</nav>
 	
 	<h1 style = "text-align:center;">Scriptor</h1>
-		<form action="/action_page.php" class="editProfileBackBox">
+		<div class="editProfileBackBox">
 			<h4>Sign Up</h4>
 			
 			<table calss="norm" style="margin-left:auto;margin-right:auto;" id="">
@@ -47,34 +48,33 @@
 						<label for = "Church Name">  Church Name: </label>
 					</th>
 					<th>
-						<input type="text" name="ChurchName" value="ChurchName" size="35" align="right"><br>
+						<input type="text" id="Name" size="35" align="right"><br>
 					</th>
 				</tr>
-				<tr>
+				<tr>	
 					<th>
-						<label for = "Name">  Name: </label>
+						<label for = "Address"> New Addrress: </label>
 					</th>
 					<th>
-						<input type="text" name="Name" value="Name" size="35" align="right"><br>
+						<input type="text" id="Address" size="35" align="right"><br>
 					</th>
-				</tr>
 				<tr>	
 					<th>
 						<label for = "Password"> New Password: </label>
 					</th>
 					<th>
-						<input type="password" name="Password" value="password" size="35" align="right"><br>
+						<input type="password" id="Password" value="" size="35" align="right"><br>
 					</th>
 				</tr>
 				<tr>	
 					<th>
-						<label for = "PasswordComfirm"> Comfirm Password: </label>
+						<label for = "Passwordcom"> Comfirm Password: </label>
 					</th>
 					<th>
-						<input type="password" name="PasswordComfirm" value="password" size="35" align="right"><br>
+						<input type="Password" id="Passwordcom" value="" size="35" align="right"><br>
 					</th>
 				</tr>
 			</table>
-			<input type="submit" value="Update">
-		</form>
+			<button onclick="updateUser()" value="Update"> Update </button>
+		</div>
 </body>

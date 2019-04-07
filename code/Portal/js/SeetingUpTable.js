@@ -48,12 +48,8 @@ function updateList(){
 	 
 	//this takes all the current data in the table, and save it into a array, along with it's desired position
 	for(i = 1; i < rowCount; i++){
-		var oCells = oTable.rows.item(i).cells;
-		
-		var songName = (oCells.item(1).innerHTML);
-		var priority = (oCells.item(2).children[0].value);
-		
-		songs.push([songName, priority]);
+		var name = (oCells.item(1).innerHTML);
+		points.sort(function(a, b){return b-a});	
 	}
 	
 	//clears the table so it is a fresh start;

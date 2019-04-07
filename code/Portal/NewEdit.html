@@ -20,23 +20,23 @@
 	<script src="/__/firebase/init.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 	<script type="text/javascript" src="js/saveSongs.js"></script>
+	<script type="text/javascript" src="js/availableSongListFunctions.js"></script>
+	<script type="text/javascript" src="js/automaticTests.js"></script> 
+	<script type="text/javascript" src="js/SeetingUpTable.js"></script>
+	<script type="text/javascript" src="js/DeletingARow.js"></script>
 
 	<link rel="stylesheet" href="css/BaseStyles.css" />
 	<link rel="stylesheet" href="css/homepageInfo.css" />
 	<link rel="stylesheet" href="css/NewEditStyles.css" />
-
-	<script type="text/javascript" src="js/automaticTests.js"></script> 
-	<script type="text/javascript" src="js/SeetingUpTable.js"></script>
-	<script type="text/javascript" src="js/DeletingARow.js"></script>
 	
 </head>
 
-<body>
+<body onLoad='allAvailableSongs("Edit", "songsToEdit")'>
 	<nav class="collapse">
 			<ul>	
 				<li><a href="Homepage.html">Home</a></li>
 				<li><a class="active">Edit/Add Songs</a></li>
-				<li><a href="#EditProfile">Edit Profile</a></li>
+				<li><a href="EditProfile.html">Edit Profile</a></li>
 				<button onclick="logOut()">Sign Out</button>
 			</ul>
 		</nav>
@@ -46,19 +46,9 @@
 	<!-- This is the table
 	containing the songs that can be added to service -->
 	<div id="leftBody"><h1>Available Songs<h1>
-		<table style="margin-left:auto;margin-right:auto;" id="availableTableHTML">
-			<tr>
+		<table id="songsToEdit">
 				<th><ins>Song</ins></th>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Star Spangled Banner</td>
-				<td><button onclick="selectSong(this.id)" title="edit", style="text-align:center;", id="Star Spangled Banner", > edit</td>
-			</tr>
-			<tr>
-				<td>God Save The Queen</td>
-				<td><button onclick="selectSong(this.id)" title="edit", style="text-align:center;", id="God Save The Queen", > edit</td>
-			</tr>
+				<th><ins>Edit</ins></th>
 		</table>
 	</div>
 	

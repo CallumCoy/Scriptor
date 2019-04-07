@@ -23,6 +23,8 @@
 	<script type="text/javascript" src="js/automaticTests.js"></script> 
 	<script type="text/javascript" src="js/SeetingUpTable.js"></script>
 	<script type="text/javascript" src="js/DeletingARow.js"></script>
+	<script type="text/javascript" src="js/dateSetUp.js"></script>
+	<script type="text/javascript" src="js/availableSongListFunctions.js"></script>
 
 	<link rel="stylesheet" href="css/BaseStyles.css" />
 	<link rel="stylesheet" href="css/homepageInfo.css" />
@@ -30,7 +32,7 @@
 	
 </head>
 
-<body>
+<body onLoad='setDate()'>
 
 		<nav class="collapse">
 			<ul>
@@ -107,14 +109,6 @@
 				<th><ins>Song</ins></th>
 				<th><ins>Add</ins></th>
 			</tr>
-			<tr>
-				<td>Star Spangled Banner</td>
-				<td><button onclick="getButtonInfo(this.id)" title="add song", style="text-align:center;", id="Star Spangled Banner", > add</td>
-			</tr>
-			<tr>
-				<td>God Save The Queen</td>
-				<td><button onclick="getButtonInfo(this.id)" title="add song", style="text-align:center;", id="God Save The Queen", > add</td>
-			</tr>
 		</table>
 	</div>
 	
@@ -127,60 +121,6 @@
 				<th><ins>Song Name</ins></th>
 				<th><ins>New Order</ins></th>
 				<th><ins>Remove</ins></th>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>1</td>
-				<td><input type="text" name = "God Save The Queen" value = "1"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>2 1</td>
-				<td><input type="text" name = "Row1" value = "1"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>3 11</td>
-				<td><input type="text" name = "Row1" value = "11"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>4 3</td>
-				<td><input type="text" name = "Row1" value = "3"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>5 4</td>
-				<td><input type="text" name = "Row1" value = "4"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>6 6</td>
-				<td><input type="text" name = "Row1" value = "6"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>7 5</td>
-				<td><input type="text" name = "Row1" value = "5"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr>
-			<tr>
-				<td>8</td>
-				<td>8 5</td>
-				<td><input type="text" name = "Row1" value = "5"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
-			</tr
-			<tr>
-				<td>9</td>
-				<td>9 5</td>
-				<td><input type="text" name = "Row1" value = "5"</td>
-				<td><button onclick="deleteRow('selectedTableHTML', this)"title="Remove Song", style="text-align:center;"> remove</td>
 			</tr>
 		</table>
 		<button onclick="updateList()", title="Save The current order", style="font-size:150%;", style="text-align:center;"> Submit </button>
