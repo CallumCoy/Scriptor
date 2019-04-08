@@ -1,0 +1,52 @@
+The iOS App's UI was tested in the following ways:
+
+1)
+- The App was opened.
+- The settings button was tapped.
+- The "+" stepper was tapped.
+- The font of the "Aa" label increased.
+
+2)
+- The App was opened.
+- The settings button was tapped.
+- The "-" stepper was tapped.
+- The font of the "Aa" label decreased.
+
+3) 
+- The App was opened
+- The settings button was tapped.
+- The "+" stepper was tapped.
+- The font of the "Aa" label increased.
+- The back button was pressed.
+- The "download songs" button was pressed.
+- The font size of the downloaded text matches the "Aa" label's font on the settings page.
+ 
+4)
+- The App was opened
+- The settings button was tapped
+- The "-" stepper was tapped.
+- The font of the "Aa" label decreased.
+- The back button was pressed.
+- The "download songs" button was pressed.
+- The font size of the downloaded text matches the "Aa" label's font on the settings page.
+
+5)
+- The App was opened.
+- The settings button was tapped.
+- The "select your church" button was tapped.
+- The blank list was tapped.
+- Nothing occured.
+
+6)
+- The App was opened.
+- The settings button was tapped.
+- The "select your church" button was tapped.
+- One of the three listed churches was tapped.
+- The Settings Menu is shown again.
+- The selected church is now listed in the Settings Menu.
+
+7)
+- The App was opened
+- The "download songs" button was pressed.
+- The text was tapped and dragged downward.
+- The text scrolls.

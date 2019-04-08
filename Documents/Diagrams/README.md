@@ -1,5 +1,3 @@
-Populate each section with information as it applies to your project. If a section does not apply, explain why. Include diagrams (or links to diagrams) in each section, as appropriate. For example, sketches of the user interfaces along with an explanation of how the interface components will work; ERD diagrams of the database; rough class diagrams; context diagrams showing the system boundary; etc.
-
 # Program Organization
 
 You should have a diagram of your high level architecture in this section, along with a description of each component and a table that relates each component to one or more user stories.
@@ -11,7 +9,8 @@ You should have a diagram of your high level architecture in this section, along
 
 You should have an UML class diagram in this section, along with a description of each class and a table that relates each component to one or more user stories. At a minimum, you need 1 diagram of your major classes. You are encouraged to also include more detailed diagrams that include all of your classes. 
 
----------------- no idea for the above
+- [UML Diagram](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Diagrams/UML%20Plan.md)
+- [HTML Class Digram](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Diagrams/html%20Class%20Diagram.md)
 
 # Data Design
 
@@ -34,11 +33,12 @@ You should list the assumptions, rules, and guidelines from external sources tha
   The design will be quite simple, since it is just html, and css in the design aspect.  The main screen contains will contian two tables, containing available songs and scheduled songs.  For the date select We chose a simple drop down interface over taking the entire sprint to figuring out how to make a calender.
   
   ## Android Design
-  [Android Diagrams](https://github.com/CallumCoy/Scriptor/new/Cal's-Branch/Documents/Diagrams)
+  [Android Diagrams](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Diagrams/Android%20Design.md)
   
   
   ## iOS Design
-
+  [iOS Diagram](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Diagrams/iOSDiagram.md)
+  
 # Resource Management
 
   Time is an important resource for this project. It is important we balance our time as we also have other classes in the way that need focus on as well. Our computer resources won't be depleted throughout the course of this project, so there is nothing to worry about there. Luckily, money isn't involved in this project, but it is still important we attempt to be efficient with our work. 

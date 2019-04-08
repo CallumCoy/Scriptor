@@ -10,4 +10,5 @@ Observation: Should change text to smaller size
 
 Step 3:
 Action: Repeat step 2 for normal, medium, and large buttons
+
 Observation: Should change text size in respect to button being clicked.

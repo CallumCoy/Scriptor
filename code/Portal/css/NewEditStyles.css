@@ -1,0 +1,23 @@
+/*Styles for the editing page of Scriptor*/
+/* setting up the default table design */
+table{
+	margin-left:0 auto;
+	margin-right:0 auto;
+	border-collapse: separate;
+	border-spacing: 0px;
+	width:100%;
+}
+
+td,th{
+	text-align:left;
+	padding: 4px;
+	margin: 0;
+    border: 0.1px solid #0d0d0d;
+}
+
+.scrollabletextbox {
+	rest: center;
+    height: calc(100% - 180px);
+    width: calc(100% - 20px);
+    overflow:scroll;
+}

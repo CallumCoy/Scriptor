@@ -9,4 +9,5 @@ For now:
 
 Step 1:
 Action: Click on Click to View Today's Songs and Sermons button that should be on homepage
+
 Observation: The button should disappear and song list should appear

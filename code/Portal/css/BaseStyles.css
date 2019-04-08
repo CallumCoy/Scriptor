@@ -1,0 +1,157 @@
+/* navigation bar */
+nav{
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(to top right, #8f2d56 0%, #ff9933 100%);;
+}
+
+/* ul == list */
+nav ul{
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: right;
+  float: center;
+}
+
+/*li == list item*/
+nav ul li{
+  display: inline-block;
+  padding: 14px 16px;
+  color: black;
+}
+
+/*a = text within the list*/
+nav ul li a{
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: white;
+}
+
+ul.topnav li.icon{
+  display: none;
+}
+
+nav ul li:hover{
+  background-color: black;
+  color: white;
+}
+
+nav i{
+  color: black;
+}
+
+/*
+		End of the navigation bar
+		Start of the different survey boxes
+*/
+/*end of declaring the default table
+start od spliting the screen up */
+
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	text-align:middle;
+	background: radial-gradient(#33ccff 0%, #0099ff 100%);
+}
+}
+
+input{
+	size: 35;
+	autocomplete: on;
+	font-size: 12pt;
+	padding: 1% 0 1% 0;
+}
+
+div {
+	position:fixed;
+	text-align:center;
+	padding:5px;
+}
+
+#leftBody{
+	top: 16%;
+	left: 30px;
+	height:calc(100% - 16% - 30px);
+	width:calc(30% - 36px);
+	padding: 5px;   
+	background: linear-gradient(to bottom left, #ffff99 0%, #ffcc00 100%);
+	border-radius: 5px 0px 0px 5px;
+    border: 1px solid #0d0d0d;
+	margin:auto;
+	text-align:left;
+	overflow:auto;
+}
+
+#rightBody{
+	top: 16%;
+	left: calc(30% + 6px);
+	height:calc(100% - 16% - 30px);
+	width:calc(69% - 66px);
+    background: linear-gradient(to bottom right, #ffff99 0%, #ffcc00 100%);
+	border-radius: 0 5px 5px 0;
+    border: 1px solid #0d0d0d;
+	padding: 5px 20px;
+	margin:auto;
+	text-align:left;
+	overflow:auto;
+}
+div signUpLink{
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	font-size: 14pt;
+}
+
+label{
+	display:inline-block;
+	margin-right:30px;
+	text-align: right;
+}
+
+/*end of setting up the screen layout
+log in page*/
+
+#loginSection{
+	text-align: middle;
+	overflow: auto;
+	padding: 1% 0 1% 0;
+	box-shadow:
+		0 0 1px 1px #ffffff,
+		0 0 2px 2px #ffffff,
+		0 0 3px 3px #ffffff;
+}
+/* end of setting up the front page 
+Setting up a default buffer space for headings*/
+
+h1{
+	margin = 10px;
+}
+
+.ceneterDiv{
+	margin:0 auto;
+}
+
+.loginPadding{
+	height: 280px;
+	width: 475px;
+	background-color: gray;
+	border-radius: 5px 5px 5px 5px;
+	position:fixed;
+	margin: 0 auto;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	margin-top: -100px;
+	margin-left: -200px;
+	padding 1% 0 1% 0;
+}
