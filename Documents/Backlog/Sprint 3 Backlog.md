@@ -1,4 +1,4 @@
-# Sprint 3 Backlog (God Save Us)
+# Sprint 3 Backlog
 
 | ID |User Story|Effort|Priority|Validation Criteria|Status|Who Completed This Task|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
