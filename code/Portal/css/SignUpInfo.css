@@ -1,0 +1,25 @@
+/* setting up the default table design */
+table{
+	margin-left:0 auto;
+	margin-right:0 auto;
+	border-collapse: separate;
+	border-spacing: 10px;
+	width:100%;
+}
+
+td,th{
+	text-align:left;
+	padding: 0;
+	margin: 0;
+    border: 0;
+}
+
+div signUpLink{
+	position:fixed;
+	position: absolute;
+	text-align: center;
+	Border: 1px solid black;
+	bottom: 0;
+	left: 0;
+	font-size: 14pt;
+}

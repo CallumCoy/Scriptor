@@ -1,0 +1,130 @@
+<html lang="en-US">
+<head>
+
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyBqvTFL0FUKUoLE0xQr3X-yhC4HsqLYZE0",
+		authDomain: "scriptor-a57b1.firebaseapp.com",
+		databaseURL: "https://scriptor-a57b1.firebaseio.com",
+		projectId: "scriptor-a57b1",
+		storageBucket: "scriptor-a57b1.appspot.com",
+		messagingSenderId: "357246850306"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<script src="/__/firebase/5.9.2/firebase-app.js"></script>
+	<script src="/__/firebase/5.9.2/firebase-auth.js"></script>
+	<script src="/__/firebase/init.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script type="text/javascript" src="js/signOut.js"></script>
+	<script type="text/javascript" src="js/automaticTests.js"></script> 
+	<script type="text/javascript" src="js/SeetingUpTable.js"></script>
+	<script type="text/javascript" src="js/DeletingARow.js"></script>
+	<script type="text/javascript" src="js/dateSetUp.js"></script>
+	<script type="text/javascript" src="js/availableSongListFunctions.js"></script>
+
+	<link rel="stylesheet" href="css/BaseStyles.css" />
+	<link rel="stylesheet" href="css/homepageInfo.css" />
+
+	
+</head>
+
+<body onLoad='setDate()'>
+
+		<nav class="collapse">
+			<ul>
+		<select id="ddday">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+		</select>
+		
+		<select id="ddmonth">
+			<option value="1">Jan</option>
+			<option value="2">Feb</option>
+			<option value="3">Mar</option>
+			<option value="4">Apr</option>
+			<option value="5">May</option>
+			<option value="6">Jun</option>
+			<option value="7">Jul</option>
+			<option value="8">Aug</option>
+			<option value="9">Sep</option>
+			<option value="10">Oct</option>
+			<option value="11">Nov</option>
+			<option value="12">Dec</option>
+		</select>
+		
+		<select id="ddyear">
+			<option value="2017">2017</option>
+			<option value="2018">2018</option>
+			<option value="2019">2019</option>
+			<option value="2020">2020</option>
+		</select>
+	
+				<li><a class="active" href="#Dashboard">Home</a></li>
+				<li><a href="NewEdit.html">Edit/Add Songs</a></li>
+				<li><a href="EditProfile.html">Edit Profile</a></li>
+				<button onclick="logOut()">Sign Out</button>
+			</ul>
+		</nav>
+
+		<h1 align:"center" >Scriptor</h1>
+	
+	<!-- This is the table
+	containing the songs that can be added to service -->
+	<div id="leftBody"><h1>Available Songs<h1>
+		<table style="margin-left:auto;margin-right:auto;" id="availableTableHTML">
+			<tr>
+				<th><ins>Song</ins></th>
+				<th><ins>Add</ins></th>
+			</tr>
+		</table>
+	</div>
+	
+	<!-- This is a table with the columns place, followed by the name of the song -->
+	<div id="rightBody">
+	<h1> Order </h1>
+		<table style="margin-left:auto;margin-right:auto;" id="selectedTableHTML">
+			<tr>
+				<th title="The order that the song is in"><ins>Order</ins></th>
+				<th><ins>Song Name</ins></th>
+				<th><ins>New Order</ins></th>
+				<th><ins>Remove</ins></th>
+			</tr>
+		</table>
+		<button onclick="updateList()", title="Save The current order", style="font-size:150%;", style="text-align:center;"> Submit </button>
+		<!--<button onclick="BeginTheTests()",style="font-size:150%;", style="text-align:center;">TESTS</button> -->
+	</div>
+</body>
+</html>

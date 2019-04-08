@@ -1,0 +1,67 @@
+<html lang="en-US">
+<head>
+
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyBqvTFL0FUKUoLE0xQr3X-yhC4HsqLYZE0",
+		authDomain: "scriptor-a57b1.firebaseapp.com",
+		databaseURL: "https://scriptor-a57b1.firebaseio.com/ ",
+		projectId: "scriptor-a57b1",
+		storageBucket: "scriptor-a57b1.appspot.com",
+		messagingSenderId: "357246850306"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<script src="/__/firebase/5.9.2/firebase-app.js"></script>
+	<script src="/__/firebase/5.9.2/firebase-auth.js"></script>
+	<script src="/__/firebase/init.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script type="text/javascript" src="js/saveSongs.js"></script>
+	<script type="text/javascript" src="js/availableSongListFunctions.js"></script>
+	<script type="text/javascript" src="js/automaticTests.js"></script> 
+	<script type="text/javascript" src="js/SeetingUpTable.js"></script>
+	<script type="text/javascript" src="js/DeletingARow.js"></script>
+
+	<link rel="stylesheet" href="css/BaseStyles.css" />
+	<link rel="stylesheet" href="css/homepageInfo.css" />
+	<link rel="stylesheet" href="css/NewEditStyles.css" />
+	
+</head>
+
+<body onLoad='allAvailableSongs("Edit", "songsToEdit")'>
+	<nav class="collapse">
+			<ul>	
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a class="active">Edit/Add Songs</a></li>
+				<li><a href="EditProfile.html">Edit Profile</a></li>
+				<button onclick="logOut()">Sign Out</button>
+			</ul>
+		</nav>
+
+		<h1 align:"center" >Scriptor</h1>
+	
+	<!-- This is the table
+	containing the songs that can be added to service -->
+	<div id="leftBody"><h1>Available Songs<h1>
+		<table id="songsToEdit">
+				<th><ins>Song</ins></th>
+				<th><ins>Edit</ins></th>
+		</table>
+	</div>
+	
+	<!-- This is a table with the columns place, followed by the name of the song -->
+	<div id="rightBody">
+	<h1> Edit </h1>
+		Song Name <br> 
+		<input id="songName">  </input>
+		<br>Lyrics
+		<textarea class="scrollabletextbox" id="lyrics" value="">
+		</textarea>
+		<button onclick="saveSong();", style="font-size:150%;", style="text-align:center;"> Save </button>
+		
+		<!--<button onclick="BeginTheTests()",style="font-size:150%;", style="text-align:center;">TESTS</button> -->
+	</div>
+</body>

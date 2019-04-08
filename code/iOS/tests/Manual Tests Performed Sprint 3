@@ -1,0 +1,27 @@
+
+Web Service:
+
+1. 
+Web Service was passed no parameters
+Successfully returned "N/A" rather than crashing.
+
+2.
+Web Service was passed garbage data as a parameters.
+Successfully returned "N/A" rather than crashing.
+
+3. 
+Web Service was passed useful data as parameters.
+Successfully found the appropriate songs and returned the lyrics.
+
+--------------------------------------------------------------------------------
+
+App:
+1. Invoking Web Service on first install
+- Install App with no local data.
+- Attempt to download songs by pressing the "Get Today's Songs" button.
+- App should return an error message reequesting that a church be selected in the settings menu.
+
+2. Invoking Web Service with data for which there is no songs
+- Select a church and date in settings for which no songs have been posted.
+- Attempt to download songs by pressing the "Get Today's Songs" button.
+- N/A should be displayed on the screen, as it was the server's response.

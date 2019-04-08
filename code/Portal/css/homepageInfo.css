@@ -1,0 +1,30 @@
+/* setting up the default table design */
+table{
+	
+	border-radius: 5px;
+	margin-left:0 auto;
+	margin-right:0 auto;
+	border-collapse: separate;
+	border-spacing: 0px;
+	width:100%;
+	border: 1px solid #0d0d0d;
+	background: #f2f2f2;
+}
+
+
+td,th{
+	text-align:left;
+	padding: 4px;
+    border: 1px solid #0d0d0d;
+	margin: 0;
+}
+
+/*end of declaring the default table
+start od spliting the screen up */
+
+.scrollabletextbox{
+	rest: center;
+    height: calc(100% - 150px);
+    width: calc(100% - 5px);
+    overflow:scroll;
+}

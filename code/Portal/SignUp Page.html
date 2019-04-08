@@ -1,0 +1,80 @@
+<html lang="en-US">
+<head>
+
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyBqvTFL0FUKUoLE0xQr3X-yhC4HsqLYZE0",
+		authDomain: "scriptor-a57b1.firebaseapp.com",
+		databaseURL: "https://scriptor-a57b1.firebaseio.com",
+		projectId: "scriptor-a57b1",
+		storageBucket: "scriptor-a57b1.appspot.com",
+		messagingSenderId: "357246850306"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<script src="/__/firebase/5.9.2/firebase-app.js"></script>
+	<script src="/__/firebase/5.9.2/firebase-auth.js"></script>
+	<script src="/__/firebase/init.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script type="text/javascript" src="js/createAccount.js"></script>
+	
+	<link rel="stylesheet" href="css/BaseStyles.css" />
+	<link rel="stylesheet" href="css/SignUpInfo.css" />
+
+</head>
+
+<body>
+
+	<h1 style = "text-align:center;">Scriptor</h1>
+		<div class="loginPadding">
+			<h4>Sign Up</h4>
+			
+			<table calss="norm" style="margin-left:auto;margin-right:auto;" id="">
+				<tr>
+					<th>
+						<label for = "email">  Email: </label>
+					</th>
+					<th>
+						<input type="text" ID="email" value="email@3mail.com" size="35" align="right"><br>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<label for = "churchName">  Name: </label>
+					</th>
+					<th>
+						<input type="text" ID="churchName" value="Name" size="35" align="right"><br>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<label for = "Address">  Address: </label>
+					</th>
+					<th>
+						<input type="text" ID="Address" value="Address" size="35" align="right"><br>
+					</th>
+				</tr>
+				<tr>	
+					<th>
+						<label for = "Password"> Password: </label>
+					</th>
+					<th>
+						<input type="password" ID="Password" value="password" size="35" align="right"><br>
+					</th>
+				</tr>
+				<tr>	
+					<th>
+						<label for = "PasswordComfirm"> Comfirm Password: </label>
+					</th>
+					<th>
+						<input type="password" ID="PasswordComfirm" value="password" size="35" align="right"><br>
+					</th>
+					</tr>
+			</table>
+			<button value="Sign Up" onclick="handleSignUp()"> Sign Up</button>
+			<a href="index.html">Sign In</a>
+		</div>
+</body>

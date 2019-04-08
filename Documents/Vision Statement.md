@@ -4,9 +4,6 @@ The: Scriptor
 Is a: hym assistor
 That: Help people keep up with the service
 Unlike: a script
-Our Product: -----
-
------- TODO ------   check the text below \/
 
 Our program is for members of the community that attend religious gatherings.  It is built specifically to help the newer members of the religious communities that struggle to keep up with the readings.
 
