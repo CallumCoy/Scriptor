@@ -101,8 +101,20 @@
     
     //set up the currDate in the correct format
     NSMutableString *tempDate = [NSMutableString stringWithFormat:@""];
-    NSString *tempMonth = [NSString stringWithFormat:@"%ld", (long) month];
-    NSString *tempDay = [NSString stringWithFormat:@"_%ld_", (long) day];
+    NSMutableString *tempTempMonth = [[NSMutableString alloc] initWithString:[NSString stringWithFormat:@"", (long) month]];
+    NSMutableString *tempTempDay = [[NSMutableString alloc] initWithString:[NSString stringWithFormat:@"", (long) day]];
+    if((long) month < 10){
+        [tempTempMonth appendString:[NSString stringWithFormat:@"0%ld", (long) month]];
+    } else {
+        [tempTempMonth appendString:[NSString stringWithFormat:@"%ld", (long) month]];
+    }
+    if((long) day < 10){
+        [tempTempDay appendString:[NSString stringWithFormat:@"0%ld", (long) day]];
+    } else {
+        [tempTempDay appendString:[NSString stringWithFormat:@"%ld", (long) day]];
+    }
+    NSString *tempMonth = [NSString stringWithFormat:@"%@", tempTempMonth];
+    NSString *tempDay = [NSString stringWithFormat:@"_%@_", tempTempDay];
     NSString *tempYear = [NSString stringWithFormat:@"%ld", (long) year];
     [tempDate appendString:tempMonth];
     [tempDate appendString:tempDay];
