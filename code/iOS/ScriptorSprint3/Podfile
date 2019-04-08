@@ -1,0 +1,6 @@
+target 'ScriptorSprint2' do
+
+platform :ios, '12.1'
+pod 'RestKit'
+end
+

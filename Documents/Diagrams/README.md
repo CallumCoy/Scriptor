@@ -9,7 +9,8 @@ You should have a diagram of your high level architecture in this section, along
 
 You should have an UML class diagram in this section, along with a description of each class and a table that relates each component to one or more user stories. At a minimum, you need 1 diagram of your major classes. You are encouraged to also include more detailed diagrams that include all of your classes. 
 
-[UML Diagram](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Diagrams/UML%20Plan.md)
+- [UML Diagram](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Diagrams/UML%20Plan.md)
+- [HTML Class Digram](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Diagrams/html%20Class%20Diagram.md)
 
 # Data Design
 
