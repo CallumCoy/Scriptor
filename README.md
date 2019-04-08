@@ -62,6 +62,7 @@ For Sprint two we hope to have all of the mandatory features for the portal, and
 - Test Cases
   - [Android Manual Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/Manual%20Tests)
   - [Android Automatic Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/src/test/java/com/scriptor)
+- [Product Demonstration(this link will redirect you to Youtube)](https://www.youtube.com/watch?v=A906-8VW6pE&feature=youtu.be)
 
 # Sprint 3
 
@@ -86,3 +87,4 @@ For Sprint two we hope to have all of the mandatory features for the portal, and
     - [Manual Testing](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal/Manual%20Tests%20for%20the%20portal.md)
     - [Automatic Testing](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal/js/automaticTests.js)
 - [Product Demonstration(this link will redirect you to Youtube)](https://www.youtube.com/watch?v=A906-8VW6pE&feature=youtu.be)
+  - [Website](https://www.youtube.com/watch?v=ZwAPcq655C4&feature=youtu.be)
