@@ -62,6 +62,25 @@ For Sprint two we hope to have all of the mandatory features for the portal, and
 - Test Cases
   - [Android Manual Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/Manual%20Tests)
   - [Android Automatic Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/src/test/java/com/scriptor)
+
+# Sprint 3
+
+For Sprint two we hope to have all of the mandatory features for the portal, and the phone apps.  Along with we want to have the database set up.
+
+- [Product Backlog](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Backlog/Product%20Backlog.md)
+- [Current Sprint Backlog](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Backlog/Sprint%203%20Backlog.md)
+  - [Burndown Chart (This will redirect you to Google Sheets)](https://docs.google.com/spreadsheets/d/1lUnZI9tesP9iD1U9ASGLT4vclyECX21mVmoN7oNkOxo/edit?usp=sharing)
+- [Design Documents](https://github.com/CallumCoy/Scriptor/tree/master/Documents/Diagrams)
+  - [UML Plan](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Diagrams/UML%20Plan.md)
+  - [SQL plan](https://github.com/CallumCoy/Scriptor/blob/master/Documents/Diagrams/SQL%20Database.md)
+  - [HTML Design Plan](https://github.com/CallumCoy/Scriptor/blob/Cal's-Branch/Documents/Diagrams/htmlDiagram.md)
+- [Source Code](https://github.com/CallumCoy/Scriptor/tree/master/code)
+  - [Andriod Code](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App)
+  - [IOS Code](https://github.com/CallumCoy/Scriptor/tree/master/code/iOS)
+  - [Web Code](https://github.com/CallumCoy/Scriptor/tree/master/code/Portal)
+- Test Cases
+  - [Android Manual Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/Manual%20Tests)
+  - [Android Automatic Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/Android%20App/src/test/java/com/scriptor)
   - [iOS Test Cases](https://github.com/CallumCoy/Scriptor/tree/master/code/iOS/tests)
   - [Portal](https://github.com/CallumCoy/Scriptor/tree/master/code/Portal) 
     - [Manual Testing](https://github.com/CallumCoy/Scriptor/blob/master/code/Portal/Manual%20Tests%20for%20the%20portal.md)
