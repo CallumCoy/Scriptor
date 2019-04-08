@@ -30,11 +30,9 @@ public class Settings extends AppCompatActivity implements AdapterView.OnItemSel
     private static final int NORMAL = 14;
     private static final int SMALL = 12;
 
-    private static SharedPreferences sharedPref;
-    private static Spinner dropDown;
-    public static int spinnerPosition;
+    private SharedPreferences sharedPref;
+    private Spinner dropDown;
 
-    public Church selectedChurch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -273,7 +271,7 @@ public class Settings extends AppCompatActivity implements AdapterView.OnItemSel
 
         // If a new church selection is made, this will make sure it is saved
         if (!church.equalsIgnoreCase(defaultChurch)) {
-            spinnerPosition = adapter.getPosition(church);
+            int spinnerPosition = adapter.getPosition(church);
             dropDown.setSelection(spinnerPosition);
         }
     }

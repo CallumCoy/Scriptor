@@ -110,16 +110,12 @@ public class Church {
         String appendedURL = "http://34.73.45.124:8080/getData";
 
         String name = this.getName().replace(" ", "%20");
-        //Log.i("name", name);
 
         String date = SavedDate.getSavedDate().toString();
-        //Log.i("date", date);
 
         String address = this.getAddress().replace(" ", "%20");
-        //Log.i("address", address);
 
         appendedURL = appendedURL + "?church=" + name + "&currDate=" + date + "&churchAddress=" + address;
-        //Log.i("URL", appendedURL);
 
         return appendedURL;
     }
@@ -153,14 +149,12 @@ public class Church {
 
             JSONArray jsonArr = new JSONArray(responseString);
             int arrLength = jsonArr.length();
-            Log.i("array length", "" + arrLength);
 
             for(int i = 0; i < arrLength; i++)
             {
                 JSONObject jsonObj = jsonArr.getJSONObject(i);
                 Song song = new Song(jsonObj.getString("mainText"));
                 songList.add(song);
-                //songText[i] = jsonObj.getString("mainText");
                 Log.i("Success!", songList.get(i).getName());
             }
 
@@ -266,9 +260,7 @@ class songRequest extends AsyncTask<URL, Integer, String> {
         StringBuffer response = new StringBuffer();
 
         Church c = Church.getSelectedChurch();
-        Log.i("songRequest", c.appendedURL());
 
-        Log.d("broken", "did you break here?");
         // Opens URL
         try {
             url = new URL(c.appendedURL());
