@@ -20,6 +20,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Scriptor"
+        android:textColor="@color/blackText"
         android:textSize="30sp"
         app:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,6 +29,7 @@
 
     <Button
         android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="194dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
@@ -36,8 +38,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#f2f2f2"
-        android:text="Click to View Today's Sermon and Songs"
+        android:background="#FFEBB1"
+        android:text="Click to Download Songs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -46,7 +48,7 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <TextView
-        android:id="@+id/churchInfo"
+        android:id="@+id/songDisplay"
         android:layout_width="400dp"
         android:layout_height="476dp"
         android:layout_marginStart="8dp"
@@ -54,12 +56,16 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
         android:scrollbars="vertical"
+        android:textColor="@color/blackText"
         android:textSize="14sp"
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scriptor" />
+        app:layout_constraintTop_toBottomOf="@+id/scriptor"
+        tools:scrollbarAlwaysDrawHorizontalTrack="false" />
 
 </android.support.constraint.ConstraintLayout>

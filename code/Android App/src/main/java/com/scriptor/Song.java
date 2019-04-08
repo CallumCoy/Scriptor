@@ -1,21 +1,22 @@
 package com.scriptor;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
-import java.net.URL;
 import java.util.ArrayList;
 
 public class Song {
-    String name;
-    String lyrics;
-    private ArrayList<Song> songList;
+
+    private String name;
+    private String lyrics;
 
     public Song(String name){
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLyrics() {
+        return lyrics;
     }
 
     public void setLyrics(String lyrics)
