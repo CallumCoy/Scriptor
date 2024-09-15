@@ -1,13 +1,10 @@
 package com.scriptor;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.view.Menu;
@@ -16,13 +13,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
-    public SharedPreferences sharedPref;
-    //public int fontSize;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,9 +24,23 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         openSongList();
+
+        setTextSize();
     }
 
+    // Sets text size to elements on Main Activity page
+    public void setTextSize()
+    {
+        TextSize ts = new TextSize();
 
+        // Where songs are displayed
+        TextView songDisplay = findViewById(R.id.songDisplay);
+        songDisplay.setTextSize(ts.getTextSize());
+
+        // "Click to download songs" button
+        TextView buttonText = findViewById(R.id.button);
+        buttonText.setTextSize(ts.getTextSize());
+    }
 
     public void openSongList()
     {
@@ -49,20 +56,38 @@ public class MainActivity extends AppCompatActivity {
                 button.setVisibility(View.GONE);
 
                 // Will display database is future Sprint
-                TextView churchInfoDisplay = findViewById(R.id.churchInfo);
+                TextView songDisplay = findViewById(R.id.songDisplay);
 
-                churchInfoDisplay.setText("List of Songs and Sermons Here:");
+                // Grabs selected church
+                Church selectedChurch = Church.getSelectedChurch();
 
-                Church c = new Church("Church1");
-                String response = null;
+                ArrayList<Song> response = null;
+
+                // Attempts to retrieve songs
                 try {
-                    response = c.retrieveSongs();
+                    response = selectedChurch.retrieveSongs();
                 } catch (IOException e){
                     Log.e("Error:", e.toString());
                 }
-                churchInfoDisplay.setText(response);
+
+                // If the response is empty, display to the user there are no songs
+                if(response == null || response.isEmpty())
+                    songDisplay.setText("No songs available");
+                else{
+                    String songs = "";
+                    // Transfers text
+                    for(int i = 0; i < response.size(); i++)
+                    {
+                        songs = songs + response.get(i).getName() + "\n";
+                    }
+                    songDisplay.setText(songs);
+                }
+
+                // Allows scrolling ability
+                songDisplay.setMovementMethod(new ScrollingMovementMethod());
             }
         });
+
     }
 
 

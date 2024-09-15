@@ -17,8 +17,10 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="#f2f2f2"
+        android:background="#FFEBB1"
         android:dropDownWidth="wrap_content"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
         android:spinnerMode="dropdown"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,13 +31,14 @@
     <TextView
         android:id="@+id/fontSizePrompt"
         android:layout_width="395dp"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Preferred Font Size:"
+        android:textColor="@color/blackText"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +47,7 @@
     <Button
         android:id="@+id/smallSize"
         style="@style/Widget.AppCompat.Button"
+        android:background="#FFEBB1"
         android:layout_width="100dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
@@ -57,6 +61,7 @@
 
     <Button
         android:id="@+id/normalSize"
+        android:background="#FFEBB1"
         android:layout_width="100dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -70,6 +75,7 @@
 
     <Button
         android:id="@+id/largeSize"
+        android:background="#FFEBB1"
         android:layout_width="102dp"
         android:layout_height="51dp"
         android:layout_marginStart="8dp"
@@ -83,6 +89,7 @@
 
     <Button
         android:id="@+id/mediumSize"
+        android:background="#FFEBB1"
         android:layout_width="102dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
@@ -104,9 +111,56 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Select Your Church Here:"
+        android:textColor="@color/blackText"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="mm/dd/yyyy"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_prompt" />
+
+    <TextView
+        android:id="@+id/date_prompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Change Date Here:"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/largeSize" />
+
+    <Button
+        android:id="@+id/saveDate"
+        android:layout_width="104dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#FFEBB1"
+        android:text="Save Date"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_input" />
 
 </android.support.constraint.ConstraintLayout>

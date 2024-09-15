@@ -6,8 +6,9 @@
     <!-- Strings related to Settings -->
 
     <string-array name="church_array">
-        <item>Church 1</item>
-        <item>Church 2</item>
+        <item>Our Lady of the Sign</item>
+        <item>Church of Scientology</item>
+        <item>Mary Help of Christians</item>
     </string-array>
 
 </resources>

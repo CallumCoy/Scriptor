@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SongsJSON.h">
+   </FileRef>
+   <FileRef
+      location = "group:SongsJSON.m">
+   </FileRef>
+   <FileRef
+      location = "group:../SongsArrayJSON.h">
+   </FileRef>
+   <FileRef
+      location = "group:../SongsArrayJSON.m">
+   </FileRef>
+   <FileRef
+      location = "group:../jsonmodel-master">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>
